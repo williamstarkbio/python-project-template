@@ -1,0 +1,15 @@
+_subdirectory: template
+
+project_name:
+  type: str
+  help: "project name:"
+  default: "{{ _folder_name }}"
+
+python_version:
+  type: str
+  help: "Python version:"
+  default: "3.12"
+
+project_name_snake_case:
+  when: false
+  default: "{{ project_name | lower | replace(' ', '_') }}"

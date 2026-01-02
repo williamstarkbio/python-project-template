@@ -1,0 +1,57 @@
+# AI coding
+.claude/
+AGENTS.md
+CLAUDE.md
+discuss.txt
+
+# Python
+*.egg-info
+*.py[oc]
+.ipynb_checkpoints/
+.venv
+__pycache__/
+build/
+dist/
+wheels/
+
+# dev
+!.pixi/config.toml
+.logs/
+.pixi/*
+.snakemake/
+.vscode/
+
+# binary file formats
+*.7z
+*.db
+*.docx
+*.duckdb
+*.gif
+*.gz
+*.jpeg
+*.jpg
+*.mkv
+*.mp3
+*.mp4
+*.npy
+*.odt
+*.pdb
+*.pdf
+*.pickle
+*.pkl
+*.png
+*.tgz
+*.webm
+*.webp
+*.xlsx
+*.zarr
+*.zarrz
+*.zip
+
+# other file formats
+*.csv
+*.epub
+*.html
+*.ipynb
+*.svg
+*.tsv

@@ -1,0 +1,35 @@
+[project]
+name = "{{ project_name_snake_case }}"
+version = "0.1.0"
+description = ""
+readme = "README.md"
+requires-python = ">={{ python_version }}"
+dependencies = []
+
+[dependency-groups]
+dev = [
+    "pre-commit>=4.5.1",
+]
+
+[tool.ruff.format]
+# https://docs.astral.sh/ruff/configuration/
+skip-magic-trailing-comma = true
+docstring-code-format = true
+docstring-code-line-length = "dynamic"
+
+[tool.ruff.lint]
+# https://docs.astral.sh/ruff/linter/#rule-selection
+select = [
+    # pycodestyle
+    "E",
+    # Pyflakes
+    "F",
+    # pyupgrade
+    "UP",
+    # flake8-bugbear
+    "B",
+    # flake8-simplify
+    "SIM",
+    # isort
+    "I",
+]
