@@ -28,9 +28,9 @@ pre-commit install
 - direnv `.envrc` to automatically load the project virtual environment
 
 
-## create project on Windows
+## use the project template on Windows
 
-### Command Prompt (cmd)
+### in Command Prompt (cmd)
 
 save the project desired path:
 ```cmd
@@ -51,11 +51,11 @@ git commit -m "install dependencies" && ^
 pre-commit install
 ```
 
-### PowerShell
+### in PowerShell
 
 save the project desired path:
 ```powershell
-$NEW_PROJECT_DIR=<new_project_directory>
+$NEW_PROJECT_DIR="<new_project_directory>"
 ```
 
 create the project:
@@ -68,6 +68,8 @@ git commit -m "project created from github.com/williamstarkbio/python-project-te
 uv sync;
 git add uv.lock;
 git commit -m "install dependencies";
-.venv\Scripts\Activate.ps1;
-pre-commit install
+Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy RemoteSigned;
+.\.venv\Scripts\Activate.ps1;
+pre-commit install;
+ls
 ```
