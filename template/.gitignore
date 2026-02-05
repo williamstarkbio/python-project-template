@@ -2,7 +2,9 @@
 .claude/
 AGENTS.md
 CLAUDE.md
+discuss.md
 discuss.txt
+temp.txt
 
 # Python
 *.egg-info
@@ -16,6 +18,7 @@ wheels/
 
 # dev
 !.pixi/config.toml
+.env*
 .logs/
 .pixi/*
 .snakemake/
