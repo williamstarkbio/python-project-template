@@ -1,9 +1,14 @@
+# ws
+data/
+backup/
+
 # AI coding
 .claude/
 AGENTS.md
 CLAUDE.md
 discuss.md
 discuss.txt
+temp.md
 temp.txt
 
 # Python
