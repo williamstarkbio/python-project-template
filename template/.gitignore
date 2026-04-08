@@ -7,6 +7,7 @@ backup/
 AGENTS.md
 CLAUDE.md
 discuss.md
+discuss_*.md
 discuss.txt
 temp.md
 temp.txt
@@ -24,6 +25,7 @@ wheels/
 # dev
 !.pixi/config.toml
 .env*
+!.envrc
 .logs/
 .pixi/*
 .snakemake/
