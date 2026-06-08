@@ -1,16 +1,24 @@
-# ws
-data/
-backup/
+# dev
+.env*
+!.env-template
+!.envrc
+.logs/
+.pixi/*
+!.pixi/config.toml
+.snakemake/
+.vscode/
+node_modules/
 
 # AI coding
 .claude/
-AGENTS.md
-CLAUDE.md
-discuss.md
+#discuss.md
 discuss_*.md
-discuss.txt
 temp.md
-temp.txt
+temp_*.md
+
+# ws
+data/
+backup/
 
 # Python
 *.egg-info
@@ -22,15 +30,6 @@ build/
 dist/
 wheels/
 
-# dev
-!.pixi/config.toml
-.env*
-!.envrc
-.logs/
-.pixi/*
-.snakemake/
-.vscode/
-
 # binary file formats
 *.7z
 *.db
@@ -40,16 +39,19 @@ wheels/
 *.gz
 *.jpeg
 *.jpg
+*.m4a
 *.mkv
 *.mp3
 *.mp4
 *.npy
+*.odp
 *.odt
 *.pdb
 *.pdf
 *.pickle
 *.pkl
 *.png
+*.pptx
 *.tgz
 *.webm
 *.webp
