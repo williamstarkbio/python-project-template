@@ -19,7 +19,7 @@ docstring-code-line-length = "dynamic"
 
 [tool.ruff.lint]
 # https://docs.astral.sh/ruff/linter/#rule-selection
-select = [
+extend-select = [
     # pycodestyle
     "E",
     # Pyflakes
@@ -32,6 +32,10 @@ select = [
     "SIM",
     # isort
     "I",
+]
+ignore = [
+    # line too long
+    "E501",
 ]
 
 [tool.ruff.lint.isort]
