@@ -7,10 +7,30 @@
 uv sync
 ```
 
+activate the environment:
+```bash
+source .venv/bin/activate
+```
+on Windows, in Command Prompt (cmd):
+```cmd
+.venv\Scripts\activate.bat
+```
+on Windows, in PowerShell:
+```powershell
+.\.venv\Scripts\Activate.ps1
+```
+or, with direnv on Linux and macOS, have it activated whenever a shell enters the project directory:
 ```bash
 direnv allow
 ```
 
 ```bash
 pre-commit install
+```
+
+
+## run
+
+```bash
+python script.py
 ```
